@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music-Player</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0-10/css/all.css" integrity="sha512-Dj9pt3sZROOuTTs9S89ykGZeu1XQgWKg3DVpu5tZALApsrWdd3tnVjTclUuVONaHM4O8GgCnjSbHlTKXrd2OWg==" crossorigin="anonymous" />
+    </head>
+    <body>
+
+
+        <div class="main_div">
+            <div class="music-container">
+
+                <div class="top-bar">
+                    <i class="material-icons">expand_more</i>
+                    <span>Now Playing</span>
+                    <i class="material-icons">more_horiz</i>
+                  </div>
+
+                <div class="img-container">
+                    <img src="./Images/song1.jpg" alt="">
+                </div>
+
+                <div class="song-details">
+                    <p id="songName" class="name">Filhal</p>
+                    <p id="artistName" class="artist">B Praak</p>
+                </div>
+
+                <audio src="./Music/song1.mp3"></audio>
+
+                <!--Progress Bar-->
+                <div class="progressbar_container" ID="progress_container">
+              
+                    <div class="progress_div" id="progress_div">
+                        <div class="progress" id="progress">
+
+                        </div>
+                    </div>
+
+                    <div class="progress_duration">
+                        <span id="current_time">0:00</span>
+                        <span id="duration">2:00</span>
+                    </div>
+              
+                  </div>
+
+                <div class="controls">
+                    <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+                    <i id="prev" class="fas fa-step-backward" title="Previous"></i>
+              
+                    <div class="play-pause">
+                      <i id="play" class="fas fa-play main_button" title="Play"></i>
+                    </div>
+              
+                    <i id="next" class="fas fa-step-forward" title="Next"></i>
+                    <i id="more-music" class="material-icons">queue_music</i>
+                  </div>
+
+            </div>
+        </div>
+
+
+
+
+    </body>
+    <script src="./index.js"></script>
+</html>
